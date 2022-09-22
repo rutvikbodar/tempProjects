@@ -1,16 +1,17 @@
 import './App.css';
 import React from 'react';
+import SearchBar from './SearchBar';
 
 class App extends React.Component{
 
-  state = {lat : "null"}
-
-  componentDidMount(){
-    console.log("component is mounted");
+  onSubmit(data){
+    console.log(data);
   }
+
   render(){
-    console.log("Hi from the component");
-    return <div>Latitude : {this.state.lat}</div>
+    return <div className='ui container' style={{marginTop : '50px'}}>
+      <SearchBar onSubmit={this.onSubmit} />
+    </div>
   }
 }
 
