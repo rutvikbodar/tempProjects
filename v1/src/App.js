@@ -3,13 +3,7 @@ import React from 'react';
 
 class App extends React.Component{
 
-  constructor(props){
-    super(props);
-    this.state = {lat : null}
-
-    console.log("dahgad");
-    this.setState({lat : "adjkshdak"});
-  }
+  state = {lat : "null"}
 
   componentDidMount(){
     console.log("component is mounted");
