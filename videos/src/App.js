@@ -1,6 +1,7 @@
 import React from "react";
 import Searchbar from "./Searchbar";
 import youtube from './apis/youtube.js';
+import VideosList from "./VideosList";
 
 export default class App extends React.Component{
 
@@ -19,7 +20,7 @@ onTermSubmit = async (term) =>{
     return (
       <div>
         <Searchbar onTermSubmit={this.onTermSubmit} />
-        <h1>i have {this.state.videos.length} videos</h1>
+        <VideosList videos={this.state.videos} />
       </div>
     );
   }
