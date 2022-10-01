@@ -1,11 +1,8 @@
  import jsonPlaceHolder from '../apis/jsonPlaceHolder';
  
- export default async function fetchPosts(){
-    return function(dispatch,getState){
-        const Results = jsonPlaceHolder.get('/users')
-        return {
-            type : 'FETCH_POST',
-            payload : Results
-        }
+ const fetchPosts = () => async dispatch =>{
+        const Results = await jsonPlaceHolder.get('/posts')
+        dispatch({type : 'FETCH_POSTS', payload: Results})
     }
- }
+ 
+    export default fetchPosts;
