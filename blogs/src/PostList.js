@@ -29,7 +29,6 @@ class PostList extends React.Component{
     
 
     render(){
-        console.log(this.props.posts);
         const lis = (this.props.posts.length!==0)?this.renderList():<div></div>
         
         return (
