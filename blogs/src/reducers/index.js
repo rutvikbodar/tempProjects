@@ -1,4 +1,6 @@
 import {combineReducers} from 'redux';
-import fetchPosts from "../actions/index";
+import postsReducer from './postsReducer';
 
-export default combineReducers({fetchPosts});
+export default combineReducers({
+    posts : postsReducer
+});
