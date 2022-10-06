@@ -1,0 +1,25 @@
+{
+  "streams": [
+    {
+      "title": "create stream beta",
+      "description": "123",
+      "id": 1
+    },
+    {
+      "title": "madara",
+      "description": "another stream",
+      "id": 2
+    },
+    {
+      "title": "uchiha",
+      "description": "obito",
+      "id": 3
+    },
+    {
+      "title": "lol",
+      "description": "rin",
+      "userId": "111608358861300937359",
+      "id": 4
+    }
+  ]
+}
