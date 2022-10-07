@@ -2,23 +2,26 @@ import Modal from "./Modal";
 import React from "react";
 import history from '../history';
 
-const StreamDelete = () => {
+class StreamDelete extends React.Component {
 
-    const onDismiss = () => {
+    onDismiss = () => {
         history.push('/')
     }
 
-    const action = <React.Fragment>
+    action = <React.Fragment>
                         <div className="ui primary button">Delete</div>
                         <div className="ui primary button">cancel</div>
                     </React.Fragment>
 
-    return (
-        <div>
-            StreamDelete
-            <Modal title={'Delete Stream'} content={'Are you sure you want to delete the stream?'} action={action} onDismiss={onDismiss}/>
-        </div>
-    )
+    render(){
+        console.log(this.props)
+        return (
+            <div>
+                StreamDelete
+                <Modal title={'Delete Stream'} content={'Are you sure you want to delete the stream?'} action={this.action} onDismiss={this.onDismiss}/>
+            </div>
+        );
+    }
 }
 
 export default StreamDelete;
