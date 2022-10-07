@@ -7,7 +7,8 @@ import _ from 'lodash';
 class StreamEdit extends React.Component{
 
     componentDidMount(){
-        this.props.fetchStream(this.props.match.params.id)
+        this.props.fetchStream(this.props.match.params.id);
+        
     }
 
     onSubmit = (formValues) => {
@@ -15,7 +16,6 @@ class StreamEdit extends React.Component{
     }
 
     render(){
-        console.log(this.props.stream)
         return (
             <div>
                 <h3>Edit Stream</h3>
